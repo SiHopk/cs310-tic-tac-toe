@@ -117,7 +117,7 @@ public class TicTacToeModel {
         
         /* Return TRUE if the square at specified location is marked */
         
-        if(board[row][col] == !Mark.EMPTY){
+        if(board[row][col] != Mark.EMPTY){
             return true;
         }
        return false;
@@ -238,13 +238,13 @@ public class TicTacToeModel {
         for(int i = 0; i < width; i++){
             x = x + i;
         }
-        output.append(a+"\n");
+        output.append(x+"\n");
         for(int i = 0; i < width; i++){
-            stringline = i +" ";
+            String ln = i +" ";
             for(int j = 0; j < width; j++){
-                line = line+board[i][j];
+                ln = ln+board[i][j];
             }
-            output.append(line +"\n");
+            output.append(ln +"\n");
         }
         return output.toString();
     }
