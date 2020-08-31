@@ -118,7 +118,7 @@ public class TicTacToeModel {
         /* Return TRUE if the square at specified location is marked */
         
         if(board[row][col] == !Mark.EMPTY){
-            return true
+            return true;
         }
        return false;
     }
@@ -158,7 +158,7 @@ public class TicTacToeModel {
         int diagRight = 0;//count up and right
         int diagLeft = 0;//count up and left
 
-        for(int i = 0; i < width i++){
+        for(int i = 0; i < width; i++){
             int horiz = 0;
             int vert = 0;
             for(int j = 0; j < width; j++){ //will count if marks are in a row
@@ -235,13 +235,13 @@ public class TicTacToeModel {
         /* Output the board contents as a string (see examples) */
         
         String x = "";
-        for(int i = 0; i < width, i++){
+        for(int i = 0; i < width; i++){
             x = x + i;
         }
-        output.append(a+"\n")
-        for(int i = 0; i < width, i++){
+        output.append(a+"\n");
+        for(int i = 0; i < width; i++){
             stringline = i +" ";
-            for(int j = 0; j < width, j++){
+            for(int j = 0; j < width; j++){
                 line = line+board[i][j];
             }
             output.append(line +"\n");
