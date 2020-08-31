@@ -33,7 +33,6 @@ public class TicTacToeView {
            String input = keyboard.nextLine();
            String[] parts = input.split(" ");
            int[] intParts = {Integer.parseInt(parts[0]), Integer.parseInt(parts[1])};
-           System.out.println(intParts);
 
         return new TicTacToeMove(intParts[0], intParts[1]);
 
