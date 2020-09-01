@@ -165,17 +165,20 @@ public class TicTacToeModel {
                 if(board[i][j].equals(mark)){
                     horiz ++;
                 }
-                if(board[i][j].equals(mark)){
+                if(board[j][i].equals(mark)){
                     vert ++;
                 }
             }
-            if(horiz == width || vert == width){
+            if(horiz == width){
+                return true;
+            }
+            if(vert == width){
                 return true;
             }
             if(board[i][i].equals(mark)){ //will count diagonal up and left
                 diagLeft ++;
             }
-            if(board[width-i-1][i].equals(mark)){
+            if(board[width-i-1][i].equals(mark)){//counts up and right
                 diagRight++;
             }
         }

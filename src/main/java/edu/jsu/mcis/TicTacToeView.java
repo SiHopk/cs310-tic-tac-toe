@@ -26,7 +26,7 @@ public class TicTacToeView {
            if (isXTurn){
                nextLn = "Player 1 (X) Move:\nEnter the row and column numbers, separated by a space: ";
            }
-           else if(!isXTurn){
+           else{
             nextLn = "Player 2 (O) Move:\nEnter the row and column numbers, separated by a space: ";
            }
            System.out.print(nextLn);
