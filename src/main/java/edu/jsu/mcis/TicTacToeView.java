@@ -49,10 +49,9 @@ public class TicTacToeView extends JPanel {
         // INSERT YOUR CODE HERE
         for(int i = 1; i < board.length; i++){
             for(int j = 1; j < board.length; j++){
-                boars[i][j].setText(controller.getMarkAsString(i, j));
+                board[i][j].setText(controller.getMarkAsString(i, j));
             }
         }
-
     }
     
     public void disableSquares() {
@@ -62,10 +61,9 @@ public class TicTacToeView extends JPanel {
         // INSERT YOUR CODE HERE
         for(int i = 1; i < board.length; i++){
             for(int j = 1; j < board.length; j++){
-                boars[i][j].setEnabled(false);
+                board[i][j].setEnabled(false);
             }
-        }
-            
+        }   
     }
         
     public void showResult(String message) {
@@ -77,7 +75,7 @@ public class TicTacToeView extends JPanel {
     public void clearResult() {
         
         resultLabel.setText(" ");
-        
+  
     }
 
 

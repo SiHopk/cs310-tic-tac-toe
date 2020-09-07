@@ -15,7 +15,7 @@ public class TicTacToeController implements ActionListener{
         /* Initialize model, view, and width */
 
         model = new TicTacToeModel(width);
-        view = new TicTacToeView();
+        view = new TicTacToeView(this, width);
         
     }
 
