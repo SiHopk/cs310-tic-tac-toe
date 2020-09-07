@@ -3,6 +3,8 @@ package edu.jsu.mcis;
 import java.awt.event.*;
 import javax.swing.*;
 
+import edu.jsu.mcis.TicTacToeModel.Mark;
+
 public class TicTacToeController implements ActionListener{
 
     private final TicTacToeModel model;
