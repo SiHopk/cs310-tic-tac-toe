@@ -1,7 +1,7 @@
 package edu.jsu.mcis;
 
 import java.awt.event.*;
-import java.swing.*;
+import javax.swing.*;
 
 public class TicTacToeController implements ActionListener{
 
@@ -42,5 +42,4 @@ public class TicTacToeController implements ActionListener{
             view.disableSquares();
         }
     }
-
 }
