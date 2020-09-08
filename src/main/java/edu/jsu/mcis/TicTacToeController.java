@@ -34,10 +34,10 @@ public class TicTacToeController implements ActionListener{
         // INSERT YOUR CODE HERE
         String evt = event.toString();
         evt = evt.substring(evt.length()-2);
-        int num = Integer.parseInt(evt);
-        int first = num/10;
-        int second = num%10;
-        model.makeMark(first, second);
+        int inp = Integer.parseInt(evt);
+        int a = inp/10;
+        int b = inp%10;
+        model.makeMark(a, b);
         view.updateSquares();
         if(!model.getResult().equals(TicTacToeModel.Result.NONE)){
             view.showResult(model.getResult().toString());
